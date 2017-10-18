@@ -1,9 +1,10 @@
 restx-ldap
 =========
 A restx module that allows to interact with an LDAP server in the context of user authentication.
-The used LDAP client libray is Apache Directory which is compatible with all LDAP implementations
+The used LDAP client libray is Apache Directory which is compatible with all LDAP implementations. 
+For testing purpose, an OpenLDAP docker-compose file is available in docker folder local to this repository).
 
-First we need to define two implementations : a user service (this component ensure authentication by retriving user by name, and by checking credentials) 
+First we need to define two implementations : a user service (this component ensure authentication by retrieving user by name, and by checking credentials) 
 which uses a user repository (the data access layer) :
 
 ```java
