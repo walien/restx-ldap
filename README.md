@@ -21,7 +21,7 @@ which uses a user repository (the data access layer) :
    @Component
    public class MyLdapUserService extends LdapUserService<User> {
    
-       public LdapUserService(LdapUserRepository userRepository, CredentialsStrategy credentialsStrategy) {
+       public MyLdapUserService(LdapUserRepository userRepository, CredentialsStrategy credentialsStrategy) {
            super(userRepository, credentialsStrategy);
        }
    }
