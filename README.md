@@ -11,7 +11,7 @@ which uses a user repository (the data access layer) :
    @Component
    public class MyLdapUserRepository extends LdapUserRepository<User> {
    
-       public LdapUserPersistor(LdapConnection ldapConnection, LdapSettings ldapSettings, LdapUserDefinition userDefinition, User defaultAdmin) {
+       public MyLdapUserRepository(LdapConnection ldapConnection, LdapSettings ldapSettings, LdapUserDefinition userDefinition, User defaultAdmin) {
            super(ldapConnection, ldapSettings, userDefinition, defaultAdmin);
        }
    }
